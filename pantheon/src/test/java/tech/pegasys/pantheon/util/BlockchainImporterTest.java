@@ -41,6 +41,7 @@ public final class BlockchainImporterTest {
 
   @Rule public final TemporaryFolder folder = new TemporaryFolder();
 
+
   BlockchainImporter blockImporter = new BlockchainImporter();
 
   @Test
