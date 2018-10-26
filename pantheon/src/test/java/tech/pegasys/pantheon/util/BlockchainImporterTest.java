@@ -41,7 +41,6 @@ public final class BlockchainImporterTest {
 
   @Rule public final TemporaryFolder folder = new TemporaryFolder();
 
-
   BlockchainImporter blockImporter = new BlockchainImporter();
 
   @Test
@@ -75,10 +74,6 @@ public final class BlockchainImporterTest {
             keyPair);
     final BlockchainImporter.ImportResult result =
         blockImporter.importBlockchain(source, ctrl, true, 1, 1, false, false, null);
-    System.out.println(source);
-    System.out.println(target);
-
-    System.out.println(result);
     assertThat(result.count).isEqualTo(33);
     assertThat(result.td).isEqualTo(UInt256.of(4357120));
   }
