@@ -2,11 +2,16 @@
   * read the Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/PegasysEng/pantheon/blob/master/CODE-OF-CONDUCT.md
   * Reproduced the issue in the latest version of the software
   * Followed all steps in the debugging wiki: https://github.com/PegasysEng/pantheon/wiki/debugging
-  * Verified the issue doesn't already exist: https://github.com/search?q=+is%3Aissue+repo%3APegasysEng/Pantheon-->
+  * Verified the issue doesn't already exist: https://github.com/search?q=+is%3Aissue+repo%3APegasysEng/Pantheon
+Note:  Not all sections will apply to all issue types.-->
+
 ### Description
+As an [Actor], I want [feature] so that [why]. 
 
+### Acceptance Criteria
+* [Criteria 1]
 
-### Steps to Reproduce
+### Steps to Reproduce (Bug)
 1. [Step 1]
 2. [Step 2]
 3. [Step ...]
@@ -17,8 +22,7 @@
 
 **Frequency:** [What percentage of the time does it occur?]
 
-### Versions
-
+### Versions (Add all that apply)
 * Software version: [`pantheon --version`]
 * Java version: [`java -version`]
 * OS Name & Version: [`cat /etc/*release`]
