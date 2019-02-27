@@ -157,11 +157,11 @@ public final class RunnerTest {
 
       // Wait for network to initialize to get the P2P UDP port
       Awaitility.await()
-          .atMost(5, TimeUnit.SECONDS)
+          .atMost(20, TimeUnit.SECONDS)
           .ignoreExceptions()
           .untilAsserted(() -> assertThat(runnerAhead.getP2pUdpPort()).isNotNull());
       Awaitility.await()
-          .atMost(5, TimeUnit.SECONDS)
+          .atMost(20, TimeUnit.SECONDS)
           .ignoreExceptions()
           .untilAsserted(() -> assertThat(runnerAhead.getP2pTcpPort()).isNotNull());
 
