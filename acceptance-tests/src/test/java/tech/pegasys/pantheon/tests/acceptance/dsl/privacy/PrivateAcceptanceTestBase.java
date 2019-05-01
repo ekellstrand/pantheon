@@ -42,12 +42,12 @@ public class PrivateAcceptanceTestBase extends AcceptanceTestBase {
     privateTransactionVerifier = new PrivateTransactionVerifier(eea, transactions);
   }
 
-  protected static OrionTestHarness createEnclave(
+  public static OrionTestHarness createEnclave(
       final String pubKey, final String privKey, final String... othernode) throws Exception {
     return OrionTestHarnessFactory.create(privacy.newFolder().toPath(), pubKey, privKey, othernode);
   }
 
-  protected static PrivacyParameters getPrivacyParameters(final OrionTestHarness testHarness)
+  public static PrivacyParameters getPrivacyParameters(final OrionTestHarness testHarness)
       throws IOException {
     return new PrivacyParameters.Builder()
         .setEnabled(true)

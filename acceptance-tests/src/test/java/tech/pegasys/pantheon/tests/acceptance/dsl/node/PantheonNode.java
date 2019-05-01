@@ -118,8 +118,8 @@ public class PantheonNode implements NodeConfiguration, RunnableNode, AutoClosea
         path -> {
           try {
             copyResource(path, homeDirectory.resolve("key"));
-          } catch (IOException e) {
-            LOG.error("Could not find key file \"{}\" in resources", path);
+          } catch (Exception e) {
+            LOG.error(String.format("Could not find key file \"%s\" in resources", path), e);
           }
         });
     this.keyPair = KeyPairUtil.loadKeyPair(homeDirectory);
